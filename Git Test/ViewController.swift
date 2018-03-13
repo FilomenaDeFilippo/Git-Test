@@ -10,11 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
-    var contatore=0
+    var contatorepressioni=0
+    
+
+    //Incrementa un contatore e visualizza un messaggio relativo
     
     @IBAction func button(_ sender: UIButton) {
-        contatore=contatore+1
-        label.text="hai premuto  \(contatore)  volte"
+        contatorepressioni=contatorepressioni+1
+        label.text="hai premuto  \(contatorepressioni)  volte"
     }
     override func viewDidLoad() {
         super.viewDidLoad()
